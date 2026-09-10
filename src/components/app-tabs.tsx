@@ -27,6 +27,16 @@ export default function AppTabs() {
           renderingMode="template"
         />
       </NativeTabs.Trigger>
+
+      {/* TEMPORAL — pestaña para revisar el sistema de diseño (Fase 2).
+          Quitar junto con app/dev-showcase.tsx al terminar la revisión. */}
+      <NativeTabs.Trigger name="dev-showcase">
+        <NativeTabs.Trigger.Label>Showcase</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          src={require('@/assets/images/tabIcons/explore.png')}
+          renderingMode="template"
+        />
+      </NativeTabs.Trigger>
     </NativeTabs>
   );
 }

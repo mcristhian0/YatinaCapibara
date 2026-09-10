@@ -1,7 +1,9 @@
 import * as Device from 'expo-device';
+import { Link } from 'expo-router';
 import { Platform, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Button } from '@/components/Button';
 import { AnimatedIcon } from '@/components/animated-icon';
 import { HintRow } from '@/components/hint-row';
 import { ThemedText } from '@/components/themed-text';
@@ -37,6 +39,11 @@ export default function HomeScreen() {
           <ThemedText type="title" style={styles.title}>
             Welcome to&nbsp;Expo
           </ThemedText>
+
+          {/* TEMPORAL — revisión visual de la Fase 2. Quitar al terminar. */}
+          <Link href="/dev-showcase" asChild>
+            <Button label="Ver showcase" />
+          </Link>
         </ThemedView>
 
         <ThemedText type="code" style={styles.code}>
